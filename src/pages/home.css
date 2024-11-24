@@ -1,0 +1,120 @@
+.gradient-navbar {
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  background: linear-gradient(90deg, #4b6cb7, #223863);
+}
+
+.navbar-scrolled {
+  background: rgba(0, 0, 0, 0.8); /* Adjust for desired scroll effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.nav-link {
+  position: relative;
+  color: rgb(248, 246, 246);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffcc00;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+.dropdown-menu {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* style.css */
+
+.carousel-inner img {
+  height: 600px; /* Adjust height as needed */
+  /* 
+   */
+}
+.features-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 200px; 
+}
+
+.features-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.features-icon {
+  background: linear-gradient(90deg, #007bff, #6610f2); /* Gradient example */
+  color: white;
+}
+.s1-container {
+  background-color: rgb(244, 245, 248); 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.s1-container img {
+  width: 270px;
+  margin: 40px 20px 20px 40px;
+  height: 270px;
+  opacity: 0;
+  transform: translateY(20px); /* Initial position for animation */
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.s1-container img:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.s1-container img:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.s1-container img:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.s1-container img:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.s1-container img:nth-child(5) {
+  animation-delay: 1s;
+}
+.s1-container img:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.s1-container img:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.s1-container img:nth-child(8) {
+  animation-delay: 1.6s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Starts slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Ends at original position */
+  }
+}

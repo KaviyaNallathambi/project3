@@ -1,0 +1,266 @@
+.men-container {
+    display: flex;
+  }
+  
+/* Add this CSS */
+.vertical-menu {
+  position: sticky;
+  top: 0; 
+  /* padding: 10px; */
+  width: 230px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd; 
+  height: 100vh; 
+}
+/* #h1{
+    padding-right: 20px;
+    padding-left: 20px;
+  } */  
+
+  .category-section {
+    padding: 10px;
+  }
+  
+  .category-section h5 {
+    margin-bottom: 10px;
+  }
+  
+  .category-section div {
+    margin-bottom: 8px; 
+  }
+  .category-section label {
+    margin-left: 8px; 
+  }
+  
+  .vertical-menu a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px;
+    border-radius: 4px;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateX(5px); 
+    transition: transform 0.3s ease;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Add subtle animations on hover */
+  .vertical-menu a:hover {
+    animation: pulse 0.5s ease-in-out;
+  }
+  
+  /* Keyframes for a slight pulsing effect */
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  .section-content {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px; /* Space between cards */
+    /* padding: 20px; */
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+}
+
+  .card-img-top {
+    height: 210px;
+     object-fit: cover; 
+  }
+  
+  .card-body {
+    padding: 5px; 
+       flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out title, text, and button */
+  }
+  
+  .card-title {
+    font-size: 15px;
+    margin-bottom: 5px;
+text-align: center;
+margin-top: 5px;
+margin-bottom: 5px;
+  }
+  
+  .card-text {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 2px;
+   margin-left: 0px;
+   text-align: center;
+  }
+
+
+
+  h6{
+    text-align: center;
+  }
+  .btn-primary {
+    /* background-color: #4CAF50; */
+    border: none;
+    padding: 3px 3px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+  /* .button-container
+  {
+   margin-top: 5px;
+   margin-left: 5px;
+   margin-right: 5px;
+    margin-bottom: 5px;
+  } */
+  #b1{
+    margin-right: 8px;
+  }
+  .card-img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* .card-img-top {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  } */
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card-img-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .card-img-container:hover .card-img-top {
+    transform: scale(1.1); /* zoom effect */
+  }
+  
+  .cart-page {
+    padding: 20px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .cart-item img {
+    border-radius: 5px;
+  }
+  
+  .cart-item div {
+    flex: 1;
+  }
+  
+  .cart-item button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cart-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cart-page h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .cart-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    height: 100%;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    z-index: 9999;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+
+  
+
+
+ 

@@ -1,6 +1,4 @@
 import React from 'react';
-// import cm2 from './images/cm2.webp';
-// import cm3 from './images/cm3.webp';
 import b1  from  './images/b1.jpg';
 import b2  from  './images/b2.jpg';
 import b3  from  './images/b3.jpg';
